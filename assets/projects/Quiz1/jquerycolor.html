@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <title>JQuery - DOM CSS</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<style>
+.Red {
+  color: red;
+}
+.Green {
+  color: green;
+}
+
+
+</style>
+</head>
+
+ <body>
+ <form id="myForm">
+
+<p>How old are you?</p>
+<label for="young"><input type="radio" name = "age" id="young" value="1" />under 18</label>
+<label for="mid"><input type="radio" name = "age" id="mid" value="2" />19-34 </label>
+<label for="old"><input type="radio" name = "age" id="old" value="3" />34+</label>
+
+<p>What is your favorite color?</p>
+<select id="colorlist">
+<option value="1">Red</option>
+<option value="2">Green</option>
+
+</select >
+ <p><input type="submit" value="Submit"></p>
+ </form>
+ <p id="yourAge">Age: </p>
+ <p id="yourColor">This gets text color:</p>
+<p id="yourColorId">This gets value of color:</p>
+ <script>
+
+ $(document).ready(function(){
+
+ $('#myForm').submit(function() {
+ age = $("input[name='age']:checked").val();
+ $("#yourAge").append(age);
+
+ color =  $("#colorlist option:selected").text();
+ $("#yourColor").append(color);
+ $("yourColor").addClass(color);
+
+ colorId =  $("#colorlist").val();
+ $("#yourColorId").append(colorId);
+
+ return false;
+});
+});
+ </script>
+ </body>
+</html>

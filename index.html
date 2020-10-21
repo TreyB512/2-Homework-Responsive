@@ -1,100 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <!-- Bootstrap Js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/996973c893.js"></script>
+
     <link rel="stylesheet" href="assets/css/style.css">
-    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.6/css/boxicons.min.css' rel='stylesheet'>
 
 
-    <title>Trey's Portfolio| Web Designer</title>
-
-
+    <title>Portfolio</title>
 </head>
+
 <body>
-
-    <!-- HEADER-->
-<header class="header-1">
-    <nav class="nav bd-grid">
-        <div>
-            <a href="#" class="nav_logo">Trey brooks</a>
-        </div>
-
-        <div class="nav_menu" id=nav-menu>
-            <ul class="nav_list">
-                <li class="nav_item"><a href="#home" class="nav_link active">Home</a></li>
-                <li class="nav_item"><a href="#about" class="nav_link">About</a></li>
-                <li class="nav_item"><a href="#skills" class="nav_link">Skills</a></li>
-                <li class="nav_item"><a href="#projects" class="nav_link">Projects</a></li>
-                <li class="nav_item"><a href="#contact" class="nav_link">Contact</a></li>
-            </ul>
-        </div>
-
-        <div class="nav_toggle" id="nav-toggle">
-            <i class='bx bx-menu'></i>
-        </div>
-
-    </nav>
-</header>
-
-    <main class="1-main">
-        <!-- HOME -->
-        <section class="home" id=home>
-            <div class="home_container" bd-grid>
-                <h1 class="home_title"><span>HE</span><br>LLO.</h1>
-
-                <div class="home_scroll">
-                    <a href="#about" class="home_scroll-link"><i class='bx bx-up-arrow-alt'></i></box-icon>Scroll Down</a>
-                </div>
-
-                <img src="" alt="" class="home_img">
+    <div class="container navigation pt-3">
+        <div class="row">
+            <div class="col-6 d-flex justify-content-start align-items-center">
+                <h5 class="d-inline pl-2 text-white">Portfolio</h5>
             </div>
-        </section>
-
-        <!-- ABOUT SECTION -->
-
-            <section class="about section" id="about">
-                <h2 class="section-title">About</h2>
-
-                <div class="about_container bd-grid">
-                    <div class="about_img" alt="">
-                        <img src="assets/images/sit-img.jpg" alt="" class="">
+            <div class="col-6 pt-2">
+                <div class="row text-center p-0 d-flex justify-content-end align-items-center">
+                    <div class="col-3">
+                        <a href="#about" class="text-white navigation-link">About</a>
                     </div>
+                    <div class="col-3">
+                        <a href="#projects" class="text-white navigation-link">Projects</a>
+                    </div>
+                    <div class="col-3">
+                        <a href="#social-media" class="text-white navigation-link">Social Media</a>
+                    </div>
+                    <div class="col-3">
+                        <a href="#contact" class="text-white navigation-link">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-                    <div>
-                        <h2 class=""about_subtitle">I'm Trey Brooks</h2>
-                        <span class="about_profession">Web Designer</span>
-                        <p class="about_text">lkadfklna kdanf laknfaklfnadfjhaioudgf aiuha diufadifbadfbu iobadf bm iaujdbfi ajbdaiufoh baohdfb ma nbji bfaiobdf badfhb
-                            afdipibna fidba  jkbdanf  adj  adfjn aodinhjfapo jnadf djd  ijbnaifdj ba j  oafh oandf jnj oa ank fn
+    <!-- Main Container -->
+    <div class="main-container container">
+        <div class="row main_row">
+            <div class="col-6">
+                <h2 class="text-white">Hello, I'm</h2>
+                <h1 class="text-warning m-heading">Trey Brooks</h1>
+                <h2 class="text-white">Web Developer</h2>
+            </div>
+            <div class="col-6">
+                <img src="https://via.placeholder.com/554x1350.png/373c5e/FFFFFF" class="img-fluid" />
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about" class="container about p-5">
+        <div class="row">
+            <div class="col-6">
+                <img src="assets/images/cropped-cir2.png" class="img-fluid" />
+            </div>
+            <div class="col-6 pl-5 pt-5 pb-5 text-white">
+                <h3 class="text-warning">About Me</h3>
+                <h1 class="m-heading"></h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis
+                    eligendi natus, ex maiores
+                    <b class="text-warning">quaerat provident</b> iusto tenetur vero
+                    ipsum. Beatae expedita obcaecati odio dignissimos itaque nulla
+                    voluptatum doloremque sed iusto!
+                </p>
+                <br />
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis
+                    magni <b class="text-warning">adipisci sunt eum</b>, reprehenderit
+                    dignissimos quaerat maiores ad. Magni, totam iure. Doloribus ea
+                    <b class="text-warning">molestiae deleniti</b> excepturi iure neque,
+                    harum illum!
+                </p>
+                <button class="btn btn-outline-warning">Learn More</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects Section -->
+    <div id="projects" class="container mt-5 pt-5">
+        <h1 class="text-warning mb-3 pb-2">My Projects</h1>
+        <div class="row">
+            <div class="col-4 mb-5">
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/images/music-img.jpg" class="card-img-top" style="height: 13rem;" alt="..." />
+                    <div class="card-body">
+                        <h5 class="card-title">Musical Quiz</h5>
+                        <p class="card-text">
+                            A project I made about to question how much a user knows their
+                            music history. Give it a try.
                         </p>
+                        <a href="assets/projects/Quiz1/index.html" target="_blank" class="btn btn-warning">See Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-5">
+                <div class="card" style="width: 18rem;">
+                    <img src="./images/fitness.svg" class="card-img-top img-fluid" alt="..." style="height: 13rem;" />
+                    <div class="card-body">
+                        <h5 class="card-title">Fitness Web App</h5>
+                        <p class="card-text">
+                            Some quick example text to build on the card title and make up
+                            the bulk of the card's content.
+                        </p>
+                        <a href="#" class="btn btn-warning">See Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-5">
+                <div class="card" style="width: 18rem;">
+                    <img src="./images/e_commerce_platform.svg" class="card-img-top" alt="..." style="height: 13rem;" />
+                    <div class="card-body">
+                        <h5 class="card-title">E-Commerce Platform</h5>
+                        <p class="card-text">
+                            Some quick example text to build on the card title and make up
+                            the bulk of the card's content.
+                        </p>
+                        <a href="#" class="btn btn-warning">See Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-5">
+                <div class="card" style="width: 18rem;">
+                    <img src="./images/music.svg" class="card-img-top" alt="..." style="height: 13rem;" />
+                    <div class="card-body">
+                        <h5 class="card-title">Music Player</h5>
+                        <p class="card-text">
+                            Some quick example text to build on the card title and make up
+                            the bulk of the card's content.
+                        </p>
+                        <a href="#" class="btn btn-warning">See Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-5">
+                <div class="card" style="width: 18rem;">
+                    <img src="./images/photography.svg" class="card-img-top" alt="..." style="height: 13rem;" />
+                    <div class="card-body">
+                        <h5 class="card-title">Photography Platform</h5>
+                        <p class="card-text">
+                            Some quick example text to build on the card title and make up
+                            the bulk of the card's content.
+                        </p>
+                        <a href="#" class="btn btn-warning">See Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-5">
+                <div class="card" style="width: 18rem;">
+                    <img src="./images/web_scraping.svg" class="card-img-top" alt="..." style="height: 13rem;" />
+                    <div class="card-body">
+                        <h5 class="card-title">Manga Scraping Web App</h5>
+                        <p class="card-text">
+                            Some quick example text to build on the card title and make up
+                            the bulk of the card's content.
+                        </p>
+                        <a href="#" class="btn btn-warning">See Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-                        <div class="about_social">
-                            <a href="#" class="about_social-icon"><i class='bx bxl-instagram' ></i></a>
-                            <a href="#" class="about_social-icon"><i class='bx bxl-github' ></i></a>
-                            <a href="#" class="about_social-icon"><i class='bx bxl-linkedin' ></i></i></a>
+    <!-- Social Media Section -->
+    <div id="social-media" class="container-fluid">
+        <div class="container text-white py-5">
+            <h4 class="text-warning">Social Media</h4>
+            <h1 class="m-heading">Let's be friends</h1>
+            <div class="row pt-5">
+                <div class="col-3 media_link btn" href="#">
+                    <div class="row">
+                        <div class="col-6 d-flex justify-content-start">
+                            <h3 class="m-0 pt-2 text-white">LinkedIn</h3>
+                        </div>
+                        <div class="col-6 d-flex justify-content-end align-items-center">
+                            <i class="fab fa-linkedin-in fa-2x text-secondary"></i>
                         </div>
                     </div>
                 </div>
-            </section>
 
+                <div class="col-3 media_link btn">
+                    <div class="row">
+                        <div class="col-6 d-flex justify-content-start">
+                            <h3 class="m-0 pt-2 text-white">Github</h3>
+                        </div>
+                        <div class="col-6 d-flex justify-content-end align-items-center">
+                            <i class="fab fa-github fa-2x text-secondary"></i>
+                        </div>
+                    </div>
+                </div>
 
-    </main>
+                <div class="col-3 media_link btn">
+                    <div class="row">
+                        <div class="col-6 d-flex justify-content-start">
+                            <h3 class="m-0 pt-2 text-white">Youtube</h3>
+                        </div>
+                        <div class="col-6 d-flex justify-content-end align-items-center">
+                            <i class="fab fa-youtube fa-2x text-secondary"></i>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="col-3 media_link bg-warning btn">
+                    <div class="row">
+                        <div class="col-6 d-flex justify-content-start">
+                            <h3 class="m-0 pt-2 text-dark">Email</h3>
+                        </div>
+                        <div class="col-6 d-flex justify-content-end align-items-center">
+                            <i class="fas fa-envelope fa-2x text-secondary"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-        <!-- FOOTER -->
-
-
-
-        <!-- SCROLL REVEAL -->
-        <script src="https://unpkg.com/scrollreveal"></script>
-
-
-
-        <!-- MAIN JS -->
-        <script src="assets/js/main.js"></script>
-
-
-
+    <!-- Footer -->
+    <footer>
+        <div class="container text-muted text-center py-3 mt-5">
+            <h5>
+                Copyright &copy; 2020 |
+                <a class="text-warning text-decoration-none" href="#about">Trey Brooks</a>
+            </h5>
+        </div>
+    </footer>
 </body>
+
 </html>
