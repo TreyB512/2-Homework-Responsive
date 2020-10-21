@@ -35,3 +35,74 @@
     --mb-3: 1.5rem;
     --mb-4: 2rem;
 }
+
+/* Z INDEX */
+:root{
+    --z-fixed: 100;
+}
+
+/* BASE CSS */
+
+*,::before,::after{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: var(--header-height) 0 0 0;
+    font-family: var(--body-font);
+    font-size: var(noraml-font-size);
+    font-weight: var(--font-medium);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+h1{
+    margin: 0;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+img {
+    max-width:100%;
+    height: auto;
+    display: block;
+}
+
+/* CLASS CSS */
+.section {
+    padding: 3rem 0;
+}
+
+.section-title {
+    postiion: relative;
+    font-size: var(--h2-font-size);
+    color: var(--dark-color);
+    margin: var(--mb-4);
+    text-align: center;
+}
+
+.section-title::after {
+    position: absolute;
+    content: "";
+    width: 32px;
+    height: .18rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 2rem;
+    background-color: var(--first-color);
+}
+
