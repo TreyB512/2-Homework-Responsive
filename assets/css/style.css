@@ -6,8 +6,12 @@ html {
 }
 
 body {
-    background:#A9A9A9;
+    background: black;
     font-family: 'Roboto', sans-serif;
+}
+
+.text-warning h3 {
+    color: white;
 }
 
     /* Main Heading Font */
@@ -51,7 +55,7 @@ body {
 
     /* About Section */
     .about {
-        background: #313552;
+        background: #D9D2BF;
         border-radius: 0.5rem;
     }
 
