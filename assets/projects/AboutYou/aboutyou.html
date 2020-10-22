@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>About You</title>
+<link href="styles.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="main">
+<div id="header"><h1 align="center">What Type of Person Are You?</h1></div>
+
+<form id="form1">
+<p>Which genre of music do you prefer?</p>
+<label><input type="radio" name="genre" id="hp" value="one" />hip-hop</label>
+<label><input type="radio" name="genre" id="rb" value="two" />R&B</label>
+<label><input type="radio" name="genre" id="pop" value="three" />Pop</label>
+<label><input type="radio" name="genre" id="country" value="four" />Country</label>
+<label><input type="radio" name="genre"id="rock" value="five" />Rock</label>
+
+
+<p>On a weekend, what do you prefer to do more?</p>
+<label><input type="radio" name="activity" id="grind" value="one" />Headed out to the club</label>
+<label><input type="radio" name="activity" id="ar" value="three" />Go to an Ariane Grande concert</label>
+<label><input type="radio" name="activity"id="beer" value="four" />Drink a 12 pack with the gang</label>
+<label><input type="radio" name="activity"id="weekend" value="two" />Spend the weekend with my girlfriend/boyfriend</label>
+<label><input type="radio" name="activity"id="skate" value="five" />Go skateboarding with the crew</label>
+
+
+<p>Which artist/group would you prefer over the other?</p>
+<label><input type="radio" name="artist" id="future" value="one" />Future</label>
+<label><input type="radio" name="artist" id="swift" value="three" />Taylor Swift</label>
+<label><input type="radio" name="artist" id="her" value="two" />Her</label>
+<label><input type="radio" name="artist" id="bird" value="four" />Luke Bryan</label>
+<label><input type="radio" name="artist" id="metal" value="five" />Metallica</label>
+
+
+<p>Which shoe brand do you like more?</p>
+<label><input type="radio" name="shoe" id="Flu" value="one" />Jordan</label>
+<label><input type="radio" name="shoe" id="con" value="three" />Converse</label>
+<label><input type="radio" name="shoe" id="madden" value="two" />Steve Madden</label>
+<label><input type="radio" name="shoe" id="pub" value="four" />Irish Setter</label>
+<label><input type="radio" name="shoe" id="van" value="five" />Vans</label>
+
+
+<p>If you could meet one artist from the past, who would you meet?</p>
+<label><input type="radio" name="past" id="pac" value="one" />Tupac</label>
+<label><input type="radio" name="past" id="mc" value="three" />Mariah Carey</label>
+<label><input type="radio" name="past" id="queen" value="two" />Prince</label>
+<label><input type="radio" name="past" id="will" value="four" />Willie Nelson</label>
+<label><input type="radio" name="past" id="hendrix" value="five" />Jimi Hendrix</label>
+
+
+<p>Which animal do you like the most?</p>
+<label><input type="radio" name="animal" id="wo" value="one" />Wolf</label>
+<label><input type="radio" name="animal" id="de" value="three" />Deer</label>
+<label><input type="radio" name="animal" id="ca" value="two" />Cat</label>
+<label><input type="radio" name="animal" id="jack" value="four" />Dog</label>
+<label><input type="radio" name="animal" id="head" value="five" />Snake</label>
+
+
+<p>Which designer brand do you prefer?</p>
+<label><input type="radio" name="designer" id="cc" value="one" />Gucci</label>
+<label><input type="radio" name="designer" id="mcqueen" value="three" />Alexander McQueen</label>
+<label><input type="radio" name="designer" id="italy" value="two" />Giorgio Armani</label>
+<label><input type="radio" name="designer" id="lauren" value="four" />Raulph Lauren</label>
+<label><input type="radio" name="designer" id="fen" value="five" />Fendi</label>
+
+
+<p>If you could live in one of these locations, which would you choose?</p>
+<label><input type="radio" name="location" id="ny" value="one" />New York</label>
+<label><input type="radio" name="location" id="la" value="three" />Los Angeles</label>
+<label><input type="radio" name="location" id="mi" value="two" />Miami</label>
+<label><input type="radio" name="location" id="ge" value="four" />Georgia</label>
+<label><input type="radio" name="location" id="en" value="five" />England</label>
+
+
+<p>Which instrument do you prefer?</p>
+<label><input type="radio" name="bass" id="gui" value="one" />Guitar</label>
+<label><input type="radio" name="bass" id="clar" value="three" />Clarinet</label>
+<label><input type="radio" name="bass" id="sax" value="two" />Saxophone</label>
+<label><input type="radio" name="bass" id="uk" value="four" />Ukulele</label>
+<label><input type="radio" name="bass" id="dr" value="five" />Drums</label>
+
+
+<p>Which of these do you find appealing the most?</p>
+<label><input type="radio" name="jobs" id="owner" value="one" />Being the owner of your own night club</label>
+<label><input type="radio" name="jobs" id="direct" value="three" />Being the director of your own tv show</label>
+<label><input type="radio" name="jobs" id="produce" value="two" />Music producer</label>
+<label><input type="radio" name="jobs" id="paint" value="four" />Proffesional painter</label>
+<label><input type="radio" name="jobs" id="travel" value="five" />Traveling around the world</label>
+
+<button type="submit" value="Submit">Submit</button>
+</form>
+
+<p id="answer"></p>
+<p id="answer2"></p>
+<p id="answer3"></p>
+<p id="answer4"></p>
+<p id="answer5"></p>
+
+</div>
+<script>
+
+
+	document.getElementById("form1").onsubmit=function(){
+
+	genre = document.querySelector('input[name = "genre"]:checked').value;
+  activity = document.querySelector('input[name = "activity"]:checked').value;
+  artist = document.querySelector('input[name = "artist"]:checked').value;
+  shoe = document.querySelector('input[name = "shoe"]:checked').value;
+  past = document.querySelector('input[name = "past"]:checked').value;
+  animal = document.querySelector('input[name = "animal"]:checked').value;
+  designer = document.querySelector('input[name = "designer"]:checked').value;
+  location = document.querySelector('input[name = "location"]:checked').value;
+  bass = document.querySelector('input[name = "bass"]:checked').value;
+  jobs = document.querySelector('input[name = "jobs"]:checked').value;
+
+
+	  // initialize score variables
+	  one = 0;
+	  two = 0;
+	  three = 0;
+    four = 0;
+    five = 0;
+
+	  //function to calculate score for each question
+	  function eachscore(x){
+	  if(x == "one") { one = one + 1}
+	  if(x == "two") { two = two + 1}
+	  if(x == "three") { three = three + 1}
+    if(x == "four") { four = four + 1}
+    if(x == "five") { five = five + 1}
+	  }
+	  //for the above function, you could also change the 1 to a variable so you could give more points for certain questions
+
+	  //call function for each question
+	  eachscore(eval("genre"));
+	  eachscore(eval("activity"));
+	  eachscore(eval("artist"));
+    eachscore(eval("shoe"));
+    eachscore(eval("past"));
+    eachscore(eval("animal"));
+    eachscore(eval("designer"));
+    eachscore(eval("location"));
+    eachscore(eval("bass"));
+    eachscore(eval("jobs"));
+
+
+
+
+	  all = [one, two, three, four, five];
+
+	//get the max score  in the array
+	maxscore = Math.max.apply(Math,all);
+
+    //figure out which score is the max score by identifying its index number
+	for(i=0; i<all.length; i++) {
+	if(all[i]==maxscore) {
+	highest = i;
+	}
+	}
+
+
+// object holding scores and feedback
+scores = [{index:0, feedback: "You like to hang out with friends and enjoy the night life scenery. Your either have enough money to blow it on bottles every weekend. Or don’t have enough money but will still waste it all to have a good night anyway."},
+{index:1, feedback: "You’re probably a laid back individual that likes to go out occasionally. You’d rather be spending time with your significant other/friend because you enjoy the alone time more than the public lights. "},
+{index:2, feedback: "You like hearing about old stories and going to the bar with the friends for food and drinks. You appreciate what the world has to offer."},
+{index:3, feedback: "You like country!"},
+{index:4, feedback: "You like rock!"}];
+
+
+
+
+
+//loop to match index to score and reply with feedback
+for(i=0;i<scores.length; i++) {
+if(highest == scores[i].index) {
+document.getElementById("answer5").innerHTML = scores[i].feedback;
+}
+}
+
+
+return false; // required to not refresh the page; just leave this here
+	   }// end the submit function
+
+</script>
+
+
+
+</body>
+</html>
