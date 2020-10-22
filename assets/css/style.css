@@ -10,8 +10,8 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-.text-warning h3 {
-    color: white;
+.text-col {
+color: #E0A226;
 }
 
     /* Main Heading Font */
