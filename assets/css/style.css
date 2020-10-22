@@ -55,7 +55,7 @@ color: #E0A226;
 
     /* About Section */
     .about {
-        background: #D9D2BF;
+        background: #404040;
         border-radius: 0.5rem;
     }
 
@@ -76,3 +76,9 @@ color: #E0A226;
         border: 2px solid #f5ba09;
         border-radius: 0.5rem;
     }
+
+    @media screen and (max-width: 768px) {
+        nav,
+        .product {
+          flex-direction: column;
+        }
